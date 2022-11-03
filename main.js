@@ -1,19 +1,25 @@
-function getComputerChoice 
+
+
+const myArray = ['rock', 'paper', 'scissors']
+
+function getComputerChoice() {
+    return myArray[~~(Math.random() * myArray.length)]
+}
 
 
 
 
 function playRound(playerSelection, computerSelection) {
-    computerSelection = computerPlay().toLowerCase();
-    playerSelection = playerPlay().toLowerCase();
+    computerSelection = getComputerChoice().toLowerCase();
+
     if (computerSelection === playerSelection) {
-        displayResults("TIE")
-    } else if (computerSelection = 'rock' && playerSelection= 'scissors') {
-        displayResults("YOU LOSE")
-    } else if (computerSelection = 'paper' && playerSelection= 'rock') {
-        displayResults("YOU WIN")
-    } else if (computerSelection = 'scissors' && playerSelection= 'paper') {
-        displayResults("YOU LOSE")
+        console.log("TIE")
+    } else if (computerSelection == 'rock' && playerSelection == 'scissors') {
+        console.log("YOU LOSE")
+    } else if (computerSelection == 'paper' && playerSelection == 'rock') {
+        console.log("YOU WIN")
+    } else if (computerSelection == 'scissors' && playerSelection == 'paper') {
+        console.log("YOU LOSE")
     }
 }
 
