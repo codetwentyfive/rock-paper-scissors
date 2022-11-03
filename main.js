@@ -21,6 +21,13 @@ function game() {
             (computerSelection == 'paper' && playerSelection == 'rock') ||
             (computerSelection == 'scissors' && playerSelection == 'paper') {
             computerScore++
+            roundWinner = 'computer'
+        }
+        if (playerSelection == 'rock' && computerSelection == 'scissors') ||
+        if (playerSelection == 'paper' && computerSelection == 'rock') ||
+        if (playerSelection == 'scissors' && computerSelection == 'paper') {
+            playerScore++
+            roundWinner = 'player'
         }
 
     }
