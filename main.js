@@ -1,4 +1,6 @@
-
+let playerScore = 0;
+let computerScore = 0;
+let roundWinner = ''
 
 const myArray = ['rock', 'paper', 'scissors']
 
@@ -8,21 +10,21 @@ function getComputerChoice() {
 
 
 
+function game() {
 
-function playRound(playerSelection, computerSelection) {
-    computerSelection = getComputerChoice().toLowerCase();
+    function playRound(playerSelection, computerSelection) {
+        computerSelection = getComputerChoice().toLowerCase();
 
-    if (computerSelection === playerSelection) {
-        console.log("TIE")
-    } else if (computerSelection == 'rock' && playerSelection == 'scissors') {
-        console.log("YOU LOSE")
-    } else if (computerSelection == 'paper' && playerSelection == 'rock') {
-        console.log("YOU WIN")
-    } else if (computerSelection == 'scissors' && playerSelection == 'paper') {
-        console.log("YOU LOSE")
+        if (computerSelection === playerSelection) {
+            console.log("TIE")
+        } if (computerSelection == 'rock' && playerSelection == 'scissors') ||
+            (computerSelection == 'paper' && playerSelection == 'rock') ||
+            (computerSelection == 'scissors' && playerSelection == 'paper') {
+            computerScore++
+        }
+
     }
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+// UI
+let playerSelection = prompt("Whats your Choice")
