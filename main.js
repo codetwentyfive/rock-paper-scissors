@@ -1,3 +1,7 @@
+function getComputerChoice 
+
+
+
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = computerPlay().toLowerCase();
@@ -6,7 +10,7 @@ function playRound(playerSelection, computerSelection) {
         displayResults("TIE")
     } else if (computerSelection = 'rock' && playerSelection= 'scissors') {
         displayResults("YOU LOSE")
-    } else if (computerSelection = 'paper' && playerSelection= 'stone') {
+    } else if (computerSelection = 'paper' && playerSelection= 'rock') {
         displayResults("YOU WIN")
     } else if (computerSelection = 'scissors' && playerSelection= 'paper') {
         displayResults("YOU LOSE")
