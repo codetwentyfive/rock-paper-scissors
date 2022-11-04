@@ -1,9 +1,9 @@
 
 let playerScore = 0;
 let computerScore = 0;
-let roundWinner = ''
+let roundWinner = '';
 
-const rockButton = document.querySelector('.rock');
+
 const myArray = ['rock', 'paper', 'scissors']
 
 function getComputerChoice() {
@@ -37,4 +37,4 @@ function game() {
             roundWinner = 'player'
         }
 
-    }
+    }``
