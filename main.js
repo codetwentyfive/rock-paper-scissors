@@ -23,18 +23,19 @@ function game() {
             console.log("TIE")
 
         }
-        if (computerSelection == 'rock' && playerSelection == 'scissors') ||
+        if ((computerSelection == 'rock' && playerSelection == 'scissors') ||
             (computerSelection == 'paper' && playerSelection == 'rock') ||
-            (computerSelection == 'scissors' && playerSelection == 'paper') {
+            (computerSelection == 'scissors' && playerSelection == 'paper')) {
             computerScore++
             roundWinner = 'computer'
         }
 
-        if (playerSelection == 'rock' && computerSelection == 'scissors') ||
-        if (playerSelection == 'paper' && computerSelection == 'rock') ||
-        if (playerSelection == 'scissors' && computerSelection == 'paper') {
+        if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
+            (playerSelection == 'paper' && computerSelection == 'rock') ||
+            (playerSelection == 'scissors' && computerSelection == 'paper')) {
             playerScore++
             roundWinner = 'player'
         }
-
-    }
+    } 
+    playerSelection
+}
