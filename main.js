@@ -3,7 +3,7 @@ let playerScore = 0;
 let computerScore = 0;
 let roundWinner = '';
 
-
+const buttons=
 const myArray = ['rock', 'paper', 'scissors']
 
 function getComputerChoice() {
