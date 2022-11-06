@@ -10,6 +10,7 @@ function getComputerChoice() {
     return myArray[~~(Math.random() * myArray.length)]
 }
 function playerSelection() { prompt("Whats your selection") }
+playerSelection=window.prompt();
 
 
 
@@ -28,6 +29,8 @@ function game() {
             (computerSelection == 'scissors' && playerSelection == 'paper')) {
             computerScore++
             roundWinner = 'computer'
+            return ("You Lose aginst the A.I Machine!")
+
         }
 
         if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
@@ -35,7 +38,13 @@ function game() {
             (playerSelection == 'scissors' && computerSelection == 'paper')) {
             playerScore++
             roundWinner = 'player'
+            return ("You Win!")
         }
     } 
     playerSelection
-}
+console.log(playRound)
+
+} 
+
+    
+game
