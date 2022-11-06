@@ -3,7 +3,8 @@ let playerScore = 0;
 let computerScore = 0;
 let roundWinner = '';
 
-const buttons=
+const buttons=document.querySelectorAll('input')
+
 const myArray = ['rock', 'paper', 'scissors']
 
 function getComputerChoice() {
@@ -31,6 +32,10 @@ function game() {
             roundWinner = 'computer'
             return ("You Lose aginst the A.I Machine!")
 
+            if (computerScore==5) {
+                roundWinner ("You got cucked by a dildo")
+            }
+
         }
 
         if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
@@ -39,6 +44,12 @@ function game() {
             playerScore++
             roundWinner = 'player'
             return ("You Win!")
+
+            if (playerScore==5) {
+                roundWinner ("You saved the virgin and got laid!")
+            }
+
+            
         }
     } 
     playerSelection
