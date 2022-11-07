@@ -1,61 +1,39 @@
-
-let playerScore = 0;
-let computerScore = 0;
-let roundWinner = '';
-
-const buttons=document.querySelectorAll('input')
-
-const myArray = ['rock', 'paper', 'scissors']
+let playerScore = 0
+let computerScore = 0
+let roundWinner = ("")
 
 function getComputerChoice() {
-    return myArray[~~(Math.random() * myArray.length)]
+    let randomNumber = Math.floor(Math.random() * 3)
+    switch (randomNumber) {
+      case 0:
+        console.log("rock")  
+        return 'rock'
+      case 1:
+        console.log("paper")  
+        return 'paper'
+      case 2:
+        console.log("scissors")  
+        return 'scissors' 
+    }
 }
-function playerSelection() { prompt("Whats your selection") }
-playerSelection=window.prompt();
 
-
-
-function game() {
-
-    function playRound(playerSelection, computerSelection) {
-        computerSelection = getComputerChoice().toLowerCase();
-        playerSelection = playerSelection().toLowerCase();
-
-        if (computerSelection === playerSelection) {
-            console.log("TIE")
-
-        }
-        if ((computerSelection == 'rock' && playerSelection == 'scissors') ||
-            (computerSelection == 'paper' && playerSelection == 'rock') ||
-            (computerSelection == 'scissors' && playerSelection == 'paper')) {
-            computerScore++
-            roundWinner = 'computer'
-            return ("You Lose aginst the A.I Machine!")
-
-            if (computerScore==5) {
-                roundWinner ("You got cucked by a dildo")
-            }
-
-        }
-
-        if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
-            (playerSelection == 'paper' && computerSelection == 'rock') ||
-            (playerSelection == 'scissors' && computerSelection == 'paper')) {
-            playerScore++
-            roundWinner = 'player'
-            return ("You Win!")
-
-            if (playerScore==5) {
-                roundWinner ("You saved the virgin and got laid!")
-            }
-
-            
-        }
-    } 
-    playerSelection
-console.log(playRound)
-
-} 
-
+function playerSelection () {
+    var x = document.getElementById("playerInput").value;
     
-game
+}
+
+
+
+computerSelection = getComputerChoice()
+
+
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection == computerSelection) {
+       return console.log ("ITSA TIE")
+    } else { return console.log("fuck me")}
+  }
+
+ 
+ 
+
+
