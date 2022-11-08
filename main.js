@@ -9,9 +9,12 @@ const myArray = ['rock', 'paper', 'scissors']
 function getComputerChoice() {
     return myArray[~~(Math.random() * myArray.length)]
 }
-function playerSelection() { prompt("Whats your selection") }
+function playerSelection() {
+    return prompt("Whats your selection?")
+    alert (return)
+}
 
-
+game();
 
 function game() {
 
@@ -36,6 +39,6 @@ function game() {
             playerScore++
             roundWinner = 'player'
         }
-    } 
-    playerSelection
+    }
+    console.log(playerSelection);
 }
