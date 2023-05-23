@@ -7,23 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+<h1>ROCK PAPER SCISSORS!!!
+    CHOOSE YOUR DESTINY
+</h1>
+
+    <div class="grid-container">
+        <div class="score-container">
+            <div id="player-score" class="score">Player Score: 0</div>
+            <div id="computer-score" class="score">Computer Score: 0</div>
+        </div>
+        <div id="results"></div>
+        <p></p>
+        <div class="buttons-container">
+            <img id="rock-btn" class="button-image" src="images/rock.jpeg" alt="Rock">
+            <img id="paper-btn" class="button-image" src="images/paper.jpeg" alt="Paper">
+            <img id="scissors-btn" class="button-image" src="images/scissors.jpeg" alt="Scissors">
+        </div>
+    </div>
+    <button id="replay-btn">Replay?</button>
+
     <script src="main.js"></script>
-    <input type="text" id="playerInput">
-    <!--<button onclick="playerSelection()">Try it</button>
-    <div style="margin-bottom: 20px ">
-        <input type="button" value="rock"></input>
-        <input type="button" value="paper"></input>
-        <input type="button" value="scissors"></input>
-        <div id ="result"></div>
 
 
-    </div>-->
 </body>
 
 </html>

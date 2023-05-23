@@ -1,0 +1,81 @@
+body {
+    background-color: #008529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: auto;
+    font-family: 'Press Start 2P', cursive;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+#replay-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#results {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.buttons-container {
+    
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.score {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #030303;
+    margin-bottom: 10px;
+}
+.button-image {
+    width: 100px; 
+    height: 100px; 
+    cursor: pointer;
+    justify-content: space-evenly;
+
+}
