@@ -1,27 +1,37 @@
+* {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 body {
     background-color: #008529;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     flex: auto;
     font-family: 'Press Start 2P', cursive;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh; /* Adjust the height as needed */
-  }
-  
-  .title {
+    height: 100%;
+    /* Adjust the height as needed */
+}
+
+.title {
     text-align: center;
-  }
-  
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    
+}
+
 #replay-btn {
     font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
+    font-size: 1em;
     background-color: #fff;
     color: #000;
     border: none;
@@ -36,31 +46,34 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1.23em;
     justify-items: center;
     align-items: center;
 }
 
 
 .buttons-container {
-    
+
     display: flex;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    flex-direction: row;
 }
 
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1.25em;
     justify-items: center;
     align-items: center;
 }
@@ -68,14 +81,19 @@ body {
 
 .score {
     font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
+    font-size: 1em;
     color: #030303;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+
 }
+
 .button-image {
-    width: 100px;
-    height: 100px;
+    width: 10em;
+    height: 10em;
+    max-width: auto;
+    max-height: auto;
     cursor: pointer;
     justify-content: space-evenly;
 }
-
