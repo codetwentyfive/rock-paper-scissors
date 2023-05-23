@@ -1,5 +1,9 @@
 const myArray = ['rock', 'scissors', 'paper'];
 
+const rockButton = document.getElementById("rock-btn")
+const paperButton = document.getElementById("paper-btn")
+const scissorsButton = document.getElementById("scissors-btn")
+
 function getComputerChoice() {
     return myArray[Math.floor((Math.random() * myArray.length))]
 }
