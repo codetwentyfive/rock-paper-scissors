@@ -1,39 +1,73 @@
-let playerScore = 0
-let computerScore = 0
-let roundWinner = ("")
+const myArray = [
+  'Rock',
+  'Paper',
+  'Scissors'
+];
 
-function getComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 3)
-    switch (randomNumber) {
-      case 0:
-        console.log("rock")  
-        return 'rock'
-      case 1:
-        console.log("paper")  
-        return 'paper'
-      case 2:
-        console.log("scissors")  
-        return 'scissors' 
-    }
+function computerPlay() {
+return myArray[~~(Math.random()*myArray.length)]
 }
 
-function playerSelection () {
-    var x = document.getElementById("playerInput").value;
-    
+let computerSelection;
+let playerSelection;
+let computerScore;
+let playerScore;
+
+game();
+
+function game () {
+computerScore=0;
+playerScore=0;
+for (let i=0; i<5; i++) {
+  onUserInput();
+}
+console.log(declareWinner());
+
+function declareWinner() {
+  if (playerScore===computerScore) {
+    alert(playerScore + '-' + computerScore + '\nTie game!');
+    return playerScore + '-' + computerScore + '\nTie game!';
+  } else if (playerScore>computerScore) {
+    alert(playerScore + '-' + computerScore + '\nYou win!!');
+    return playerScore + '-' + computerScore + '\nYou win!!';
+  } else {
+    alert(playerScore + '-' + computerScore + '\nYou lost. Better luck next time!');
+    return playerScore + '-' + computerScore + '\nYou lost. Better luck next time!';
+  }
+}
 }
 
-
-
-computerSelection = getComputerChoice()
-
+function onUserInput() {
+playerSelection = prompt('Rock, Paper, or Scissors?',"");
+  if ((playerSelection.toLowerCase()=='rock')
+      ||(playerSelection.toLowerCase()=='paper')
+      ||(playerSelection.toLowerCase()=='scissors')) {
+    console.log(playRound(playerSelection,computerSelection));
+  } else {
+  alert('That\'s not a valid choice.');
+  onUserInput();
+}
+}
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection == computerSelection) {
-       return console.log ("ITSA TIE")
-    } else { return console.log("fuck me")}
+  computerSelection = computerPlay().toLowerCase();
+  playerSelection = playerSelection.toLowerCase();
+  if (computerSelection==playerSelection) {
+      alert('Tie game!');
+      return 'Tie game\nComputer Score: ' + 
+              computerScore + '\nYour Score: ' + playerScore;
+  } else if ((computerSelection=='rock' && playerSelection=='scissors') 
+            || (computerSelection=='scissors' && playerSelection=='paper') 
+            || (computerSelection=='paper' && playerSelection=='rock')) {
+      alert('You lose! ' + computerSelection + ' beats ' + playerSelection);
+      return 'Computer Score: ' + ++computerScore + 
+              '\nYour Score: ' + playerScore;
+  } else {
+      alert('You win! ' + playerSelection + ' beats ' + computerSelection);
+      return 'Your Score: ' + ++playerScore + 
+              '\nComputer Score: ' + computerScore;
   }
-
+}
  
  
-
 
