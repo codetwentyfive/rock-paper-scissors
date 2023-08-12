@@ -69,5 +69,3 @@ function playRound(playerSelection, computerSelection) {
   }
 }
  
- 
-

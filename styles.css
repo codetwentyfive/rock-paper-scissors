@@ -1,0 +1,100 @@
+* {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: #c4e8ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: auto;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    /* Adjust the height as needed */
+}
+
+.title {
+    text-align: center;
+    padding: 1em;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #c4e8ca, 0 0 30px #c4e8ca, 0 0 40px #c4e8ca, 0 0 55px #c4e8ca, 0 0 75px #c4e8ca;
+    
+}
+
+#replay-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#results {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.25em;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.23em;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.buttons-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex-direction: row;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25em;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.score {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: #030303;
+    margin-bottom: 1em;
+    color: #13b363;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #c4e8ca, 0 0 30px #c4e8ca, 0 0 40px #c4e8ca, 0 0 55px #c4e8ca, 0 0 75px #c4e8ca;
+
+}
+
+.button-image {
+    width: 10em;
+    height: 10em;
+    max-width: auto;
+    max-height: auto;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
