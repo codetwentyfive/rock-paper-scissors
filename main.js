@@ -23,15 +23,18 @@ function game() {
     // We no longer need onUserInput() here since we're using buttons.
   }
   resultsDiv.textContent = declareWinner();
+  while (i===5){
+
+  }
 }
 
 function declareWinner() {
   if (playerScore === computerScore) {
-    return playerScore + '-' + computerScore + '\nTie game!';
+    return '\nTie game!';
   } else if (playerScore > computerScore) {
-    return playerScore + '-' + computerScore + '\nYou win!!';
+    return '\nYou win!!';
   } else {
-    return playerScore + '-' + computerScore + '\nYou lost. Better luck next time!';
+    return '\nYou lost. Better luck next time!';
   }
 }
 
@@ -59,6 +62,9 @@ function playRound(playerSelection, computerSelection) {
 
 document.getElementById("replayButton").addEventListener('click', function(){
   resultsDiv.textContent="";
+  document.getElementById("playerScore").textContent="Lets try again!";
+  document.getElementById("computerScore").textContent="I believe in you!";
+  computerScore.textContent="";
   computerScore=0;
   playerScore=0;})
   
