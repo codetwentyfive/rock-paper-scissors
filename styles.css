@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex: auto;
+    width: 100vw;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -26,16 +26,17 @@ body {
 .title {
     text-align: center;
     padding: 1em;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #c4e8ca, 0 0 30px #c4e8ca, 0 0 40px #c4e8ca, 0 0 55px #c4e8ca, 0 0 75px #c4e8ca;
+    ext-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #c4e8ca, 0 0 30px #c4e8ca, 0 0 40px #c4e8ca, 0 0 55px #c4e8ca, 0 0 75px #c4e8ca;
     
 }
 
-#replay-btn {
+#replayButton {
     font-family: 'Press Start 2P', cursive;
     font-size: 1em;
     background-color: #fff;
     color: #000;
     border: none;
+    margin-top: 2em;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
@@ -48,6 +49,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 1.25em;
+    padding: 0 4em;
 }
 
 
@@ -85,7 +87,7 @@ body {
     font-size: 1em;
     color: #030303;
     margin-bottom: 1em;
-    color: #13b363;
+    color: #068043;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #c4e8ca, 0 0 30px #c4e8ca, 0 0 40px #c4e8ca, 0 0 55px #c4e8ca, 0 0 75px #c4e8ca;
 
 }
@@ -97,4 +99,5 @@ body {
     max-height: auto;
     cursor: pointer;
     justify-content: space-evenly;
+    padding: 0 1em;
 }
